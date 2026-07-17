@@ -129,6 +129,17 @@ document.querySelectorAll('.mobile-menu a').forEach(link => link.addEventListene
 
 $('.theme-toggle').addEventListener('click', () => document.body.classList.toggle('light-theme'));
 
+const profileDialog = $('#profile-dialog');
+const profileOpen = $('.profile-open');
+const profileClose = $('.profile-close');
+if (profileDialog && profileOpen && profileClose) {
+  profileOpen.addEventListener('click', () => profileDialog.showModal());
+  profileClose.addEventListener('click', () => profileDialog.close());
+  profileDialog.addEventListener('click', event => {
+    if (event.target === profileDialog) profileDialog.close();
+  });
+}
+
 const observed = document.querySelectorAll('.research-card,.method-list article,.project-list article');
 const observer = new IntersectionObserver(entries => entries.forEach(entry => {
   if (entry.isIntersecting) { entry.target.animate([{opacity:0,transform:'translateY(24px)'},{opacity:1,transform:'translateY(0)'}],{duration:700,fill:'forwards',easing:'cubic-bezier(.22,1,.36,1)'}); observer.unobserve(entry.target); }
