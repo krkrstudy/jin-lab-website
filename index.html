@@ -94,10 +94,18 @@
         <div class="research-grid">
           <article class="research-card">
             <div class="card-number">01</div>
-            <div class="model-viz cooperation-viz" aria-label="Repeated interactions strengthening cooperative ties animation">
-              <div class="game-type">COOPERATION BEHAVIOR</div>
-              <div class="cooperation-network"><i></i><i></i><i></i><i></i><i></i><b></b><b></b><b></b><b></b></div>
-              <div class="cooperation-readout"><span>ROUND 01</span><strong>C → C</strong><span>ROUND 05</span></div>
+            <div class="model-viz cooperation-viz" aria-label="Public goods game showing four people contributing to and benefiting from a shared pool">
+              <div class="game-type">PUBLIC GOODS GAME · REPEATED ROUND</div>
+              <svg class="public-goods-game" viewBox="0 0 320 220" role="img" aria-label="Four players contribute tokens to a multiplied public pool and receive a shared return">
+                <g class="pg-links"><path d="M57 57L137 101"/><path d="M263 57L183 101"/><path d="M57 163L137 119"/><path d="M263 163L183 119"/></g>
+                <g class="pg-player"><circle cx="48" cy="48" r="25"/><text x="48" y="52">A</text><text class="pg-caption" x="48" y="84">CONTRIBUTE</text></g>
+                <g class="pg-player"><circle cx="272" cy="48" r="25"/><text x="272" y="52">B</text><text class="pg-caption" x="272" y="84">CONTRIBUTE</text></g>
+                <g class="pg-player"><circle cx="48" cy="172" r="25"/><text x="48" y="176">C</text><text class="pg-caption" x="48" y="208">CONTRIBUTE</text></g>
+                <g class="pg-player"><circle cx="272" cy="172" r="25"/><text x="272" y="176">D</text><text class="pg-caption" x="272" y="208">CONTRIBUTE</text></g>
+                <g class="pg-pool"><circle cx="160" cy="110" r="39"/><text x="160" y="106">PUBLIC POOL</text><text class="pg-multiplier" x="160" y="124">× 1.6</text></g>
+                <circle class="pg-token token-a" cx="57" cy="57" r="5"/><circle class="pg-token token-b" cx="263" cy="57" r="5"/><circle class="pg-token token-c" cx="57" cy="163" r="5"/><circle class="pg-token token-d" cx="263" cy="163" r="5"/>
+              </svg>
+              <div class="experiment-result"><span>INDIVIDUAL COST</span><strong>CONTRIBUTE → MULTIPLY → SHARE</strong><span>GROUP BENEFIT</span></div>
             </div>
             <div>
               <p class="card-kicker">Interaction · Reciprocity</p>
@@ -107,11 +115,24 @@
           </article>
           <article class="research-card">
             <div class="card-number">02</div>
-            <div class="model-viz culture-viz" aria-label="Cross-cultural group comparison and bridge animation">
-              <div class="game-type">CROSS-CULTURAL DIFFERENCES</div>
-              <div class="culture-cluster cluster-a"><i></i><i></i><i></i><i></i><span>CULTURE A</span></div>
-              <div class="culture-link"><b></b><small>COMPARE</small></div>
-              <div class="culture-cluster cluster-b"><i></i><i></i><i></i><i></i><span>CULTURE B</span></div>
+            <div class="model-viz culture-viz" aria-label="The same public goods task compared across two cultural contexts with different cooperative choices">
+              <div class="game-type">SAME TASK · DIFFERENT CULTURAL CONTEXTS</div>
+              <div class="culture-comparison">
+                <div class="culture-trial trial-a">
+                  <span class="trial-name">CONTEXT A</span>
+                  <div class="trial-people"><i></i><i></i><i></i><i></i></div>
+                  <div class="trial-pool"><b>POOL</b><i></i><i></i><i></i></div>
+                  <div class="choice-meter"><span>COOPERATIVE CHOICES</span><strong>3 / 4</strong></div>
+                </div>
+                <div class="same-task"><span>SAME<br />GAME</span><i></i></div>
+                <div class="culture-trial trial-b">
+                  <span class="trial-name">CONTEXT B</span>
+                  <div class="trial-people"><i></i><i></i><i></i><i></i></div>
+                  <div class="trial-pool"><b>POOL</b><i></i><i></i></div>
+                  <div class="choice-meter"><span>COOPERATIVE CHOICES</span><strong>2 / 4</strong></div>
+                </div>
+              </div>
+              <div class="experiment-result culture-result"><span>ILLUSTRATIVE TRIAL</span><strong>COMPARE NORMS &amp; CONTEXT</strong><span>TEST STRATEGIES</span></div>
             </div>
             <div>
               <p class="card-kicker">Culture · Context</p>
