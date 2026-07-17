@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jin Lab studies cooperation, social norms, and culture through behavioral science." />
+    <title>Jin Lab — Cooperation, Norms & Culture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,400&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="intro" id="intro" aria-hidden="true">
+      <canvas id="intro-canvas"></canvas>
+      <div class="intro-header"><span>JIN LAB</span><span>BEHAVIORAL SYSTEM 001</span></div>
+      <div class="intro-sculpture" aria-hidden="true">
+        <i class="sculpture-ring ring-one"></i><i class="sculpture-ring ring-two"></i><i class="sculpture-ring ring-three"></i>
+        <span class="choice-node node-one"></span><span class="choice-node node-two"></span><span class="choice-node node-three"></span>
+        <b class="choice-path path-one"></b><b class="choice-path path-two"></b>
+        <div class="culture-field field-one"></div><div class="culture-field field-two"></div>
+      </div>
+      <div class="intro-axis axis-x"></div><div class="intro-axis axis-y"></div>
+      <div class="intro-story">
+        <div class="intro-stage-count"><span id="intro-stage-number">01</span><i></i><span>04</span></div>
+        <p class="intro-kicker">AN EXPERIMENT IN HUMAN COOPERATION</p>
+        <div class="intro-word" id="intro-word">Individual choice.</div>
+        <p class="intro-explainer" id="intro-explainer">One person decides whether to cooperate.</p>
+      </div>
+      <div class="intro-outcome" aria-hidden="true"><span>COOPERATION</span><em>BECOMES CULTURE</em></div>
+      <div class="intro-notation notation-a">C<sub>i</sub>(t) → C<sub>j</sub>(t+1)</div>
+      <div class="intro-notation notation-b">RECIPROCITY / EXPECTATION / NORM</div>
+      <div class="intro-sequence">
+        <span class="active">01&nbsp; CHOICE</span><i></i><span>02&nbsp; RECIPROCITY</span><i></i><span>03&nbsp; NORM</span><i></i><span>04&nbsp; CULTURE</span>
+      </div>
+      <button class="skip-intro" id="skip-intro" type="button">Skip intro</button>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top" aria-label="Jin Lab home">
+        <span class="brand-dot"></span>
+        <span>JIN LAB</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#methods">Methods</a>
+        <a href="#people">People</a>
+        <a href="#publications">Publications</a>
+        <a href="#join">Join us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-icon"></span>
+        </button>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="about">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Behavioral science · Cooperation · Culture</p>
+          <h1 class="reveal">How cooperation<br /><em>becomes culture.</em></h1>
+          <p class="hero-intro reveal">Jin Lab investigates how cooperative behavior and social norms emerge, vary across cultures, and can be strengthened through evidence-based interventions.</p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#research">Explore our research <span>↗</span></a>
+            <a class="text-link" href="#people">Meet the lab <span>→</span></a>
+          </div>
+          <div class="methods-strip reveal" aria-label="Our methods">
+            <span>Economic games</span><i></i><span>Cross-national experiments</span><i></i><span>Meta-analysis</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Animated visualization of cooperation networks">
+          <canvas id="network-canvas"></canvas>
+          <div class="visual-frame"></div>
+          <div class="data-label data-label-one"><span>REPEATED INTERACTION</span><b>Reciprocity</b></div>
+          <div class="data-label data-label-two"><span>ACROSS GROUPS</span><b>Norm diffusion</b></div>
+          <div class="network-legend"><span><i></i>Individual</span><span><i></i>Within-culture tie</span><span><i></i>Cross-cultural bridge</span></div>
+          <div class="visual-caption"><span class="pulse"></span> Conceptual behavioral model</div>
+        </div>
+        <div class="scroll-note"><span>Scroll to discover</span><i></i></div>
+      </section>
+
+      <section class="research section-light" id="research">
+        <div class="section-heading">
+          <p class="section-index">01 / What we study</p>
+          <h2>Economic games of<br /><em>human cooperation</em></h2>
+          <p>Controlled decisions reveal how fairness, generosity, and strategic trust shape social behavior.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card">
+            <div class="card-number">01</div>
+            <div class="model-viz ultimatum-viz" aria-label="Ultimatum game offer and response animation">
+              <div class="game-type">ULTIMATUM GAME</div>
+              <div class="token-row" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="ultimatum-players"><span><small>PROPOSER</small><b>70</b></span><em>OFFER</em><span><small>RESPONDER</small><b>30</b></span></div>
+              <div class="response-cycle"><span>REJECT · 0 / 0</span><strong>ACCEPT · 70 / 30</strong></div>
+            </div>
+            <div>
+              <p class="card-kicker">Bargaining · Fairness</p>
+              <h3>Ultimatum<br />Game</h3>
+              <p>One player proposes how to divide a resource. The responder can accept the split—or reject it so both receive nothing.</p>
+            </div>
+          </article>
+          <article class="research-card">
+            <div class="card-number">02</div>
+            <div class="model-viz dictator-viz" aria-label="Dictator game allocation animation">
+              <div class="game-type">DICTATOR GAME</div>
+              <div class="allocation-stage"><div class="allocation-disk"><span>100</span></div><i class="allocation-arrow">→</i><div class="recipient-pool"><b>20</b><small>RECIPIENT</small></div></div>
+              <div class="allocation-result"><span>DICTATOR KEEPS <b>80</b></span><span>GIVES <b>20</b></span></div>
+            </div>
+            <div>
+              <p class="card-kicker">Allocation · Generosity</p>
+              <h3>Dictator<br />Game</h3>
+              <p>One player unilaterally divides a resource. With no possibility of rejection, giving directly measures prosocial preference.</p>
+            </div>
+          </article>
+          <article class="research-card">
+            <div class="card-number">03</div>
+            <div class="model-viz dilemma-viz" aria-label="Prisoner's dilemma payoff matrix animation">
+              <div class="game-type">PRISONER’S DILEMMA</div>
+              <div class="matrix-wrap">
+                <div class="matrix-corner">A↓ · B→</div><div class="matrix-label">COOPERATE</div><div class="matrix-label">DEFECT</div>
+                <div class="matrix-label side">COOPERATE</div><div class="payoff payoff-cc"><b>3 · 3</b><small>MUTUAL TRUST</small></div><div class="payoff payoff-cd"><b>0 · 5</b><small>EXPLOITED</small></div>
+                <div class="matrix-label side">DEFECT</div><div class="payoff payoff-dc"><b>5 · 0</b><small>TEMPTATION</small></div><div class="payoff payoff-dd"><b>1 · 1</b><small>MUTUAL LOSS</small></div>
+              </div>
+            </div>
+            <div>
+              <p class="card-kicker">Strategy · Trust</p>
+              <h3>Prisoner’s<br />Dilemma</h3>
+              <p>Two players independently choose whether to cooperate or defect, revealing the tension between individual gain and mutual benefit.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="methods" id="methods">
+        <div class="methods-title">
+          <p class="section-index">02 / How we work</p>
+          <h2>Multiple methods.<br /><em>One human question.</em></h2>
+        </div>
+        <div class="method-list">
+          <article><span>01</span><h3>Economic Game Experiments</h3><p>Controlled tests of trust, fairness, punishment, reciprocity, and collective action.</p><b>↗</b></article>
+          <article><span>02</span><h3>Cross-National Behavioral Studies</h3><p>Coordinated experiments comparing behavior across cultural and institutional settings.</p><b>↗</b></article>
+          <article><span>03</span><h3>Surveys &amp; Interventions</h3><p>Measuring beliefs, norms, identities, and strategies that promote cooperation.</p><b>↗</b></article>
+          <article><span>04</span><h3>Meta-Analysis</h3><p>Synthesizing global evidence to identify robust patterns and boundary conditions.</p><b>↗</b></article>
+        </div>
+      </section>
+
+      <section class="featured section-light" id="publications">
+        <div class="featured-head">
+          <div><p class="section-index">03 / Selected work</p><h2>Research<br /><em>in motion</em></h2></div>
+          <a class="button button-dark" href="https://www.psy.pku.edu.cn/szdw/qzjy/jsyjy/jsx/index.htm#pubs" target="_blank" rel="noreferrer">All publications <span>↗</span></a>
+        </div>
+        <div class="project-list">
+          <article><span class="project-year">2026</span><div><p>Nature Human Behaviour · Cross-national study</p><h3>Honour, competition and cooperation across 13 societies</h3><small>Jin, S., Romano, A., Vignoles, V. L., et al.</small></div><a class="project-arrow" href="https://doi.org/10.1038/s41562-025-02308-0" target="_blank" rel="noreferrer" aria-label="Open DOI">↗</a></article>
+          <article><span class="project-year">2025</span><div><p>Journal of Personality and Social Psychology · Meta-analysis</p><h3>Institutions and cooperation: A meta-analysis of structural features in social dilemmas</h3><small>Jin, S., Spadaro, G., &amp; Balliet, D.</small></div><a class="project-arrow" href="https://doi.org/10.1037/pspi0000474" target="_blank" rel="noreferrer" aria-label="Open DOI">↗</a></article>
+          <article><span class="project-year">2024</span><div><p>Journal of Experimental Social Psychology · Experiment</p><h3>Conflict, cooperation, and institutional choice</h3><small>Jin, S., Columbus, S., Van Lange, P. A. M., &amp; Balliet, D.</small></div><a class="project-arrow" href="https://doi.org/10.1016/j.jesp.2023.104566" target="_blank" rel="noreferrer" aria-label="Open DOI">↗</a></article>
+          <article><span class="project-year">2022</span><div><p>Journal of Personality and Social Psychology · Meta-analysis</p><h3>Cross-cultural variation in cooperation: A meta-analysis</h3><small>Spadaro, G., Graf, C., Jin, S., et al.</small></div><a class="project-arrow" href="https://doi.org/10.1037/pspi0000389" target="_blank" rel="noreferrer" aria-label="Open DOI">↗</a></article>
+        </div>
+      </section>
+
+      <section class="people" id="people">
+        <div class="people-copy">
+          <p class="section-index">04 / Principal investigator</p>
+          <h2>Shuxian<br /><em>Jin</em></h2>
+          <p class="pi-title">Principal Investigator · Researcher · Doctoral Supervisor</p>
+          <p>Dr. Shuxian Jin joined the School of Psychological and Cognitive Sciences at Peking University in March 2026. She received her PhD in Experimental and Applied Psychology from Vrije Universiteit Amsterdam in 2023, following an MSc in Social Psychology from Nankai University in 2018 and a BSc in Human Resource Management from Capital University of Economics and Business in 2016.</p>
+          <p>From 2022 to 2026, she conducted postdoctoral research at the School of Psychology and the Centre for Culture and Social Diversity, University of Sussex.</p>
+          <p>Her research has appeared in <em>Nature Human Behaviour</em>, <em>Journal of Personality and Social Psychology</em>, and <em>Journal of Experimental Social Psychology</em>, among other journals.</p>
+          <a class="button button-outline" href="https://www.psy.pku.edu.cn/szdw/qzjy/jsyjy/jsx/index.htm" target="_blank" rel="noreferrer">Full profile <span>↗</span></a>
+        </div>
+        <div class="pi-details">
+          <div class="journey-map" aria-label="Academic journey from Beijing to Tianjin, Amsterdam, Sussex, and Peking University">
+            <div class="journey-head"><span>ACADEMIC JOURNEY</span><span>2016—2026</span></div>
+            <svg viewBox="0 0 720 360" role="img" aria-label="Dr. Shuxian Jin's academic journey">
+              <defs>
+                <filter id="map-glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <g class="map-grid">
+                <path d="M0 72H720M0 144H720M0 216H720M0 288H720"/><path d="M120 0V360M240 0V360M360 0V360M480 0V360M600 0V360"/>
+              </g>
+              <path class="route-shadow" d="M82 265 C145 165 193 245 245 175 S355 78 405 132 S506 258 548 185 S630 100 666 70"/>
+              <path class="route-line" d="M82 265 C145 165 193 245 245 175 S355 78 405 132 S506 258 548 185 S630 100 666 70"/>
+              <g class="map-stop stop-1"><circle cx="82" cy="265" r="7"/><text x="82" y="298">BEIJING</text><text class="map-detail" x="82" y="317">2016 · BSc</text></g>
+              <g class="map-stop stop-2"><circle cx="245" cy="175" r="7"/><text x="245" y="208">TIANJIN</text><text class="map-detail" x="245" y="227">2018 · MSc</text></g>
+              <g class="map-stop stop-3"><circle cx="405" cy="132" r="7"/><text x="405" y="94">AMSTERDAM</text><text class="map-detail" x="405" y="113">2023 · PhD</text></g>
+              <g class="map-stop stop-4"><circle cx="548" cy="185" r="7"/><text x="548" y="218">SUSSEX</text><text class="map-detail" x="548" y="237">2022–26 · Postdoc</text></g>
+              <g class="map-stop stop-5"><circle cx="666" cy="70" r="10" filter="url(#map-glow)"/><circle class="target-ring" cx="666" cy="70" r="23"/><text x="646" y="38">PEKING UNIVERSITY</text><text class="map-detail" x="646" y="19">2026 · PI</text></g>
+            </svg>
+            <p>BEIJING → TIANJIN → AMSTERDAM → SUSSEX → BEIJING</p>
+          </div>
+          <dl>
+            <div><dt>Research</dt><dd>Cooperation and norm formation, cross-cultural variation, and evidence-based strategies that promote cooperation.</dd></div>
+            <div><dt>Methods</dt><dd>Economic game experiments, cross-national behavioral experiments and surveys, and meta-analysis.</dd></div>
+            <div><dt>Academic service</dt><dd>Editorial Board Member, <em>Asian Journal of Social Psychology</em>; Guest Editor, <em>Journal of Experimental Social Psychology</em>; reviewer for <em>Applied Psychology: An International Review</em>, <em>Journal of Environmental Psychology</em>, <em>Journal of Experimental Social Psychology</em>, and <em>Personality and Social Psychology Bulletin</em>.</dd></div>
+            <div><dt>Contact</dt><dd><a href="mailto:s.jin@pku.edu.cn">s.jin@pku.edu.cn</a><br />Wang Kezhen Building, Peking University, Beijing 100871</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="members section-light" id="members">
+        <div class="members-heading">
+          <div>
+            <p class="section-index">05 / Lab members</p>
+            <h2>Different paths.<br /><em>Shared questions.</em></h2>
+          </div>
+          <p>Our members bring perspectives from psychology, behavioral science, and international academic communities.</p>
+        </div>
+        <div class="member-grid">
+          <article class="member-card">
+            <div class="member-index">01</div><div class="member-initials">WK</div>
+            <div class="member-info"><h3>Wang Kairan <small>王慨然</small></h3><p>Peking University</p><span>Undergraduate · 2023 Cohort</span></div>
+          </article>
+          <article class="member-card">
+            <div class="member-index">02</div><div class="member-initials">LR</div>
+            <div class="member-info"><h3>Liu Ruoting <small>刘若婷</small></h3><p>École Normale Supérieure, Paris</p><span>First-Year PhD Student</span></div>
+          </article>
+          <article class="member-card">
+            <div class="member-index">03</div><div class="member-initials">GH</div>
+            <div class="member-info"><h3>Guan Hengjie <small>关恒杰</small></h3><p>Peking University</p><span>Second-Year Undergraduate</span></div>
+          </article>
+          <article class="member-card">
+            <div class="member-index">04</div><div class="member-initials">XH</div>
+            <div class="member-info"><h3>Xie Hao <small>谢灏</small></h3><p>Renmin University of China</p><span>Master’s Student · 2023 Cohort</span></div>
+          </article>
+          <article class="member-card">
+            <div class="member-index">05</div><div class="member-initials">GQ</div>
+            <div class="member-info"><h3>Gao Qi <small>高奇</small></h3><p>University College London</p><span>Master’s Student · 2024 Cohort</span></div>
+          </article>
+          <article class="member-card">
+            <div class="member-index">06</div><div class="member-initials">XA</div>
+            <div class="member-info"><h3>Xu Ao <small>徐傲</small></h3><p>National University of Singapore</p><span>Second-Year Undergraduate</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="join" id="join">
+        <canvas id="join-canvas"></canvas>
+        <div class="join-content">
+          <p class="section-index">06 / Join Jin Lab</p>
+          <h2>New questions need<br /><em>new collaborators.</em></h2>
+          <p>We welcome postdoctoral researchers, PhD and master’s students, and research assistants with strong interests in decision-making, social psychology, and cross-cultural psychology. Applicants from computer science, life sciences, economics, management, sociology, anthropology, and other disciplines are especially encouraged.</p>
+          <p class="join-note">Prospective direct-entry PhD students are advised to contact Dr. Jin before May of the application year.</p>
+          <div class="join-actions"><a class="button button-light" href="mailto:s.jin@pku.edu.cn">Contact Dr. Jin <span>↗</span></a><a href="https://www.psy.pku.edu.cn/english/index.htm" target="_blank" rel="noreferrer" class="text-link light">School website <span>→</span></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><span class="brand-dot"></span><strong>JIN LAB</strong><p>Behavioral Science<br />Cooperation · Norms · Culture</p></div>
+      <div><span>Explore</span><a href="#research">Research</a><a href="#methods">Methods</a><a href="#people">People</a></div>
+      <div><span>Connect</span><a href="mailto:s.jin@pku.edu.cn">s.jin@pku.edu.cn</a><a href="https://www.psy.pku.edu.cn/english/index.htm" target="_blank" rel="noreferrer">PKU Psychology</a><a href="https://www.pku.edu.cn/" target="_blank" rel="noreferrer">Peking University</a></div>
+      <p class="copyright">© 2026 Jin Lab<br />All rights reserved.</p>
+    </footer>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <nav><a href="#about">About</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#people">People</a><a href="#publications">Publications</a><a href="#join">Join us</a></nav>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
