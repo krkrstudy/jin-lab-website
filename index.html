@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Cooperation and Sociocultural Lab studies cooperation, social norms, and culture through behavioral science." />
-    <title>Cooperation and Sociocultural Lab — Cooperation, Norms & Culture</title>
+    <title>Cooperation and Sociocultural Lab — Cooperation, Norms &amp; Culture</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,400&amp;display=swap" rel="stylesheet" />
@@ -43,6 +43,7 @@
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#methods">Methods</a>
         <a href="#people">People</a>
@@ -83,6 +84,45 @@
           <div class="visual-caption"><span class="pulse"></span> Conceptual behavioral model</div>
         </div>
         <div class="scroll-note"><span>Scroll to discover</span><i></i></div>
+      </section>
+
+      <section class="lab-pulse section-light" id="news">
+        <div class="pulse-visual">
+          <div class="pulse-heading">
+            <div>
+              <p class="section-index">Live research field</p>
+              <h2>Social psychology,<br /><em>in every direction.</em></h2>
+            </div>
+            <span>2,000 abstracts · 116 terms</span>
+          </div>
+          <div class="kakeya-stage" id="kakeya-stage">
+            <canvas id="kakeya-canvas" aria-label="Interactive three-dimensional Cube Gate word field of social psychology concepts. Drag to rotate and scroll to zoom."></canvas>
+            <div class="kakeya-status"><i></i><span>CUBE GATE · FINITE DIRECTION MODEL</span></div>
+            <div class="kakeya-controls">
+              <button id="kakeya-motion" type="button" aria-pressed="true">Pause</button>
+              <button id="kakeya-reset" type="button">Reset view</button>
+            </div>
+            <p class="kakeya-fallback" id="kakeya-fallback">The interactive field could not be loaded. Please refresh the page to try again.</p>
+          </div>
+          <p class="kakeya-caption">Each term traces one direction through a shared cube—an interactive view of the concepts connecting our field. Drag to explore; scroll or pinch to zoom.</p>
+        </div>
+
+        <div class="news-column">
+          <p class="section-index">News &amp; updates</p>
+          <h2>From the <em>lab.</em></h2>
+          <div class="news-list">
+            <a class="news-item" href="https://www.psy.pku.edu.cn/xwzx/xyxw/5d30aab291364b709ab434125a7fb8f3.htm" target="_blank" rel="noreferrer">
+              <time datetime="2026-06-30">June 30, 2026</time>
+              <h3>Shuxian Jin Co-Organizes EASP Pre-Conference Workshop on Prosocial and Antisocial Behavior</h3>
+              <span>Read story ↗</span>
+            </a>
+            <a class="news-item" href="https://www.psy.pku.edu.cn/xwzx/xyxw/8d0a068f29c042f7aa8c628eee0fb6f6.htm" target="_blank" rel="noreferrer">
+              <time datetime="2026-06-16">June 16, 2026</time>
+              <h3>Shuxian Jin Helps Advance the Chinese Translation and Release of the FORRT Open Scholarship Glossary</h3>
+              <span>Read story ↗</span>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section class="research section-light" id="research">
@@ -238,10 +278,6 @@
             <div class="member-index">03</div><div class="member-initials">GH</div>
             <div class="member-info"><h3>Guan Hengjie <small>关恒杰</small></h3><p>Peking University</p><span>Second-Year Undergraduate</span></div>
           </article>
-          <article class="member-card">
-            <div class="member-index">04</div><div class="member-initials">LC</div>
-            <div class="member-info"><h3>Liu Changsheng <small>刘常晟</small></h3><p>Peking University</p><span>Master’s Student · 2023 Cohort</span></div>
-          </article>
         </div>
       </section>
 
@@ -259,13 +295,13 @@
 
     <footer>
       <div class="footer-brand"><span class="brand-dot"></span><strong>COOPERATION &amp; SOCIOCULTURAL LAB</strong><p>Behavioral Science<br />Cooperation · Norms · Culture</p></div>
-      <div><span>Explore</span><a href="#research">Research</a><a href="#methods">Methods</a><a href="#people">People</a></div>
+      <div><span>Explore</span><a href="#news">News</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#people">People</a></div>
       <div><span>Connect</span><a href="mailto:s.jin@pku.edu.cn">s.jin@pku.edu.cn</a><a href="https://www.psy.pku.edu.cn/english/index.htm" target="_blank" rel="noreferrer">PKU Psychology</a><a href="https://www.pku.edu.cn/" target="_blank" rel="noreferrer">Peking University</a></div>
       <p class="copyright">© 2026 Cooperation and Sociocultural Lab<br />All rights reserved.</p>
     </footer>
 
     <div class="mobile-menu" aria-hidden="true">
-      <nav><a href="#about">About</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#people">People</a><a href="#publications">Publications</a><a href="#join">Join us</a></nav>
+      <nav><a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#people">People</a><a href="#publications">Publications</a><a href="#join">Join us</a></nav>
     </div>
     <dialog class="profile-dialog" id="profile-dialog" aria-labelledby="profile-dialog-title">
       <div class="profile-dialog-inner">
@@ -289,6 +325,15 @@
         </div>
       </div>
     </dialog>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/"
+        }
+      }
+    </script>
     <script src="script.js"></script>
+    <script type="module" src="kakeya.js" onerror="document.querySelector('#kakeya-fallback')?.classList.add('visible')"></script>
   </body>
 </html>

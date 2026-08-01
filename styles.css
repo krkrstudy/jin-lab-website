@@ -150,3 +150,68 @@ body.light-theme .hero{background:#2a1b13;color:#fff8f2}body.light-theme .hero:a
 
 @media(max-width:1080px){.hero{grid-template-columns:1fr;min-height:100svh}.hero-copy{min-height:100svh;padding-top:calc(var(--header) + 70px)}.hero-visual{height:auto;border:0}.section-heading{margin-bottom:68px}.research-grid{grid-template-columns:1fr 1fr}.research-card{min-height:650px}.research-card:last-child{grid-column:1/-1}}
 @media(max-width:700px){.hero-copy{min-height:100svh;padding:calc(var(--header) + 54px) 22px 64px}.hero h1{font-size:clamp(3.65rem,17vw,5.5rem)}.hero-intro{font-size:14px;line-height:1.55;margin-top:28px}.hero-actions{flex-direction:row;gap:14px;margin-top:28px}.hero .button{width:174px;min-width:174px}.hero .methods-strip{display:none}.hero .data-label,.hero .network-legend,.hero .visual-caption{display:none}.hero .visual-frame{inset:calc(var(--header) + 14px) 12px 14px}.research{padding-top:96px}.section-heading{align-items:flex-start;text-align:left;margin-bottom:50px}.section-heading .section-index{margin-bottom:34px}.section-heading h2{font-size:clamp(3.35rem,15vw,5rem);line-height:.86}.section-heading>p:last-child{margin:28px 0 0;font-size:14px}.research-grid{grid-template-columns:1fr}.research-card,.research-card:last-child{grid-column:auto;min-height:625px}.model-viz.cooperation-viz,.model-viz.culture-viz{height:280px}.public-goods-game{height:203px;margin-top:41px}.culture-comparison{left:12px;right:12px;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);gap:5px}.culture-trial{padding-left:6px;padding-right:6px}.experiment-result{left:12px;right:12px}.experiment-result strong{font-size:5.5px}.choice-meter span{font-size:4.5px}.same-task{font-size:4.5px}}
+
+/* Interactive social-psychology field and laboratory news. */
+.lab-pulse{
+  padding:140px clamp(24px,5.8vw,110px);
+  display:grid;
+  grid-template-columns:minmax(0,1.18fr) minmax(340px,.82fr);
+  gap:clamp(54px,7vw,120px);
+  align-items:start;
+  border-bottom:1px solid rgba(70,47,33,.18);
+}
+.pulse-visual,.news-column{min-width:0}
+.pulse-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:28px}
+.pulse-heading h2,.news-column h2{margin:22px 0 0;color:#462f21;font:500 clamp(2.5rem,4.15vw,5.1rem)/.9 Manrope,sans-serif;letter-spacing:-.065em}
+.pulse-heading h2 em,.news-column h2 em{color:#b35245;font-family:Newsreader,serif;font-weight:400}
+.pulse-heading>span{flex:0 0 auto;padding-bottom:6px;color:#806b5d;font:600 9px Manrope,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.kakeya-stage{position:relative;height:clamp(460px,48vw,650px);overflow:hidden;background:#251811;border:1px solid #8e6b55;isolation:isolate;cursor:grab;touch-action:none}
+.kakeya-stage:active{cursor:grabbing}
+.kakeya-stage:before,.kakeya-stage:after{content:"";position:absolute;z-index:2;width:23px;height:23px;border-color:rgba(255,174,124,.72);pointer-events:none}
+.kakeya-stage:before{left:17px;top:17px;border-left:1px solid;border-top:1px solid}
+.kakeya-stage:after{right:17px;bottom:17px;border-right:1px solid;border-bottom:1px solid}
+#kakeya-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;outline:none}
+.kakeya-status{position:absolute;z-index:3;left:26px;top:25px;display:flex;align-items:center;gap:9px;color:#d9bda9;font:600 8px Manrope,sans-serif;letter-spacing:.13em;pointer-events:none}
+.kakeya-status i{width:7px;height:7px;border-radius:50%;background:#ffae7c;box-shadow:0 0 0 0 rgba(255,174,124,.65);animation:kakeyaPulse 2.2s infinite}
+.kakeya-controls{position:absolute;z-index:4;right:24px;top:20px;display:flex;gap:7px}
+.kakeya-controls button{border:1px solid rgba(255,224,205,.3);background:rgba(37,24,17,.68);backdrop-filter:blur(8px);color:#f3ded0;padding:8px 11px;cursor:pointer;font:600 8px Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;transition:background .25s,border-color .25s}
+.kakeya-controls button:hover,.kakeya-controls button:focus-visible{background:#ffae7c;border-color:#ffae7c;color:#2b1c14;outline:none}
+.kakeya-caption{max-width:720px;margin:17px 0 0;color:#806b5d;font-size:12px;line-height:1.65}
+.kakeya-fallback{display:none;position:absolute;z-index:5;inset:0;place-items:center;margin:0;padding:40px;color:#ead7ca;text-align:center;font-size:13px;line-height:1.6;background:#251811}
+.kakeya-fallback.visible{display:grid}
+@keyframes kakeyaPulse{70%{box-shadow:0 0 0 8px rgba(255,174,124,0)}}
+.news-column{padding-top:1px}
+.news-column h2{font-size:clamp(3.6rem,6vw,7.25rem);margin-top:28px}
+.news-list{margin-top:74px;border-top:1px solid #9c8473}
+.news-item{display:block;padding:31px 0 34px;border-bottom:1px solid #bda99a;transition:padding .3s,color .3s}
+.news-item:hover,.news-item:focus-visible{padding-left:13px;padding-right:13px;color:#9f4439;outline:none}
+.news-item time{display:block;color:#b35245;font:600 10px Manrope,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.news-item h3{max-width:620px;margin:16px 0 27px;color:#462f21;font:500 clamp(1.35rem,2vw,2.2rem)/1.15 Manrope,sans-serif;letter-spacing:-.04em}
+.news-item>span{color:#755f50;font:600 9px Manrope,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+body.light-theme .lab-pulse{color:#462f21}
+body.light-theme .pulse-heading h2,body.light-theme .news-column h2,body.light-theme .news-item h3{color:#462f21}
+.desktop-nav{gap:clamp(16px,1.65vw,32px)}
+
+@media(max-width:1180px){.desktop-nav{display:none}.menu-button{display:grid}}
+@media(max-width:980px){
+  .lab-pulse{grid-template-columns:1fr;gap:90px}
+  .kakeya-stage{height:min(68vw,620px)}
+  .news-column{max-width:760px}
+  .news-list{margin-top:52px}
+}
+@media(max-width:700px){
+  .lab-pulse{padding:94px 22px;gap:76px}
+  .pulse-heading{display:block;margin-bottom:22px}
+  .pulse-heading h2{font-size:clamp(2.8rem,12vw,4.25rem)}
+  .pulse-heading>span{display:block;margin-top:24px;padding:0}
+  .kakeya-stage{height:470px}
+  .kakeya-status{left:17px;top:17px;max-width:155px;font-size:6.5px;line-height:1.35}
+  .kakeya-controls{right:14px;top:12px;gap:5px}
+  .kakeya-controls button{padding:7px 8px;font-size:6.5px}
+  .kakeya-caption{font-size:11px}
+  .news-column h2{font-size:clamp(4rem,18vw,6.2rem)}
+  .news-list{margin-top:42px}
+  .news-item{padding:27px 0 30px}
+  .news-item h3{font-size:clamp(1.45rem,7vw,2rem)}
+}
+@media(prefers-reduced-motion:reduce){.kakeya-status i{animation:none}}
