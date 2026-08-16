@@ -215,3 +215,18 @@ body.light-theme .pulse-heading h2,body.light-theme .news-column h2,body.light-t
   .news-item h3{font-size:clamp(1.45rem,7vw,2rem)}
 }
 @media(prefers-reduced-motion:reduce){.kakeya-status i{animation:none}}
+
+/* Bilingual control and Chinese typography adjustments. */
+.language-toggle{display:inline-flex;align-items:center;gap:5px;height:34px;margin-left:8px;padding:0 9px;border:1px solid rgba(255,235,220,.28);border-radius:999px;background:transparent;color:#c8d0d6;cursor:pointer;font:600 10px Manrope,sans-serif;letter-spacing:.08em;transition:border-color .25s,color .25s,background .25s}
+.language-toggle:hover,.language-toggle:focus-visible{border-color:var(--coral);color:var(--white);outline:none}
+.language-divider{opacity:.45}.language-option{transition:color .2s}.language-option.is-active{color:var(--coral)}
+body.light-theme .language-toggle{color:#364552;border-color:rgba(7,17,31,.2)}
+body.light-theme .language-toggle:hover,body.light-theme .language-toggle:focus-visible{color:#0b1723}
+body[data-language="zh"]{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei","DM Sans",sans-serif}
+body[data-language="zh"] .hero h1,body[data-language="zh"] .section-heading h2,body[data-language="zh"] .methods h2,body[data-language="zh"] .featured h2,body[data-language="zh"] .people h2,body[data-language="zh"] .join h2,body[data-language="zh"] .pulse-heading h2,body[data-language="zh"] .news-column h2{letter-spacing:-.045em}
+body[data-language="zh"] .hero h1 em,body[data-language="zh"] .section-heading h2 em,body[data-language="zh"] .methods h2 em,body[data-language="zh"] .featured h2 em,body[data-language="zh"] .people h2 em,body[data-language="zh"] .join h2 em,body[data-language="zh"] .pulse-heading h2 em,body[data-language="zh"] .news-column h2 em{font-family:"Noto Serif SC","Songti SC","STSong",serif;letter-spacing:-.02em}
+body[data-language="zh"] .news-item h3{letter-spacing:-.02em;line-height:1.38;word-break:break-word}
+body[data-language="zh"] .news-item>span{letter-spacing:.08em}
+body[data-language="zh"] .hero-intro,body[data-language="zh"] .section-heading>p:last-child,body[data-language="zh"] .join-content>p:nth-of-type(2),body[data-language="zh"] .profile-dialog-grid p{line-height:1.8}
+body[data-language="zh"] .language-toggle{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;letter-spacing:0}
+@media(max-width:700px){.language-toggle{height:31px;margin-left:3px;padding:0 7px;font-size:9px}.header-actions{margin-left:8px}.brand{max-width:calc(100vw - 170px);overflow:hidden;text-overflow:ellipsis}.kakeya-status{letter-spacing:.08em}body[data-language="zh"] .hero h1{letter-spacing:-.08em}body[data-language="zh"] .news-item h3{font-size:clamp(1.35rem,6.5vw,2rem)}}
