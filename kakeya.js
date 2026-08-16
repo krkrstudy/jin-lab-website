@@ -302,9 +302,12 @@ if (canvas && stage) {
 
     function syncMotionButton() {
       if (!motionButton) return;
-      motionButton.textContent = controls.autoRotate ? "Pause" : "Play";
+      const isChinese = document.documentElement.lang === "zh-CN";
+      motionButton.textContent = controls.autoRotate ? (isChinese ? "暂停" : "Pause") : (isChinese ? "继续" : "Play");
       motionButton.setAttribute("aria-pressed", String(controls.autoRotate));
     }
+
+    document.addEventListener("languagechange", syncMotionButton);
 
     motionButton?.addEventListener("click", () => {
       controls.autoRotate = !controls.autoRotate;
