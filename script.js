@@ -187,8 +187,8 @@ languageTargets.at(-1).values = [['About', 'News', 'Research', 'Methods', 'Peopl
 addLanguageTarget('.eyebrow', 'Behavioral science · Cooperation · Culture', '行为科学 · 合作 · 文化');
 addLanguageTarget('.hero h1', 'Understanding<br /><em>cooperation.</em>', '理解合作，<br /><em>认识文化。</em>');
 addLanguageTarget('.hero-intro', 'At Peking University, we study how cooperation and social norms develop, how they differ across cultures, and how interventions can support cooperation.', '合作与社会文化实验室依托北京大学，研究合作行为与社会规范的形成及其跨文化差异，并通过行为实验、调查和元分析，探索促进合作的有效方法。');
-addLanguageTarget('.hero-actions .button-primary', 'Our research <span>↗</span>', '研究方向 <span>↗</span>');
-addLanguageTarget('.hero-actions .text-link', 'Our team <span>→</span>', '团队成员 <span>→</span>');
+addLanguageTarget('.hero-actions .button-primary', 'Our research <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span>', '研究方向 <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span>');
+addLanguageTarget('.hero-actions .text-link', 'Our team <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>', '团队成员 <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>');
 addLanguageList('.methods-strip span', ['Economic games', 'Cross-national experiments', 'Meta-analysis']);
 languageTargets.at(-1).values = [['Economic games', 'Cross-national experiments', 'Meta-analysis'], ['经济博弈', '跨国实验', '元分析']];
 addLanguageList('.data-label span', ['REPEATED INTERACTION', 'ACROSS GROUPS']);
@@ -200,7 +200,7 @@ languageTargets.at(-1).values = [['Individual', 'Within-culture tie', 'Cross-cul
 addLanguageTarget('.visual-caption', '<span class="pulse"></span> Conceptual behavioral model', '<span class="pulse"></span> 行为概念模型');
 
 addLanguageTarget('.pulse-heading .section-index', 'Concepts in social psychology', '社会心理学概念');
-addLanguageTarget('.pulse-heading h2', 'Cooperation &amp;<br /><em>connections.</em>', '合作与<em>联结</em>');
+addLanguageTarget('.pulse-heading h2', 'Research concept<br /><em>cloud</em>', '研究概念的<br /><em>云图</em>');
 addLanguageTarget('.kakeya-status span', 'CUBE GATE', '立方体门');
 addLanguageTarget('#kakeya-motion', 'Pause', '暂停');
 addLanguageTarget('#kakeya-reset', 'Reset view', '重置视图');
@@ -210,8 +210,8 @@ addLanguageList('.news-item time', ['June 30, 2026', 'June 16, 2026']);
 languageTargets.at(-1).values = [['June 30, 2026', 'June 16, 2026'], ['2026年6月30日', '2026年6月16日']];
 addLanguageList('.news-item h3', ['Shuxian Jin Co-Organizes EASP Pre-Conference Workshop on Prosocial and Antisocial Behavior', 'Shuxian Jin Contributes to the Chinese FORRT Open Scholarship Glossary']);
 languageTargets.at(-1).values = [['Shuxian Jin Co-Organizes EASP Pre-Conference Workshop on Prosocial and Antisocial Behavior', 'Shuxian Jin Contributes to the Chinese FORRT Open Scholarship Glossary'], ['金淑娴研究员共同组织欧洲社会心理学协会会前专题研讨会', '金淑娴研究员参与 FORRT 开放学术术语表中文版翻译与发布']];
-addLanguageList('.news-item > span', ['Read story ↗', 'Read story ↗']);
-languageTargets.at(-1).values = [['Read story ↗', 'Read story ↗'], ['阅读原文 ↗', '阅读原文 ↗']];
+addLanguageList('.news-item > span', ['Read story <svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>', 'Read story <svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>']);
+languageTargets.at(-1).values = [['Read story <svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>', 'Read story <svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>'], ['阅读原文 <svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>', '阅读原文 <svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>']];
 
 addLanguageTarget('.research .section-index', '01 / What we study', '01 / 研究内容');
 addLanguageTarget('.research .section-heading h2', 'Research<br /><em>areas</em>', '研究<em>方向</em>');
@@ -257,17 +257,17 @@ languageTargets.at(-1).values = [['Controlled tests of trust, fairness, punishme
 
 addLanguageTarget('#publications .section-index', '03 / Selected work', '03 / 代表性成果');
 addLanguageTarget('#publications h2', 'Selected<br /><em>publications</em>', '代表性<em>成果</em>');
-addLanguageTarget('#publications .button-dark', 'All publications <span>↗</span>', '全部成果 <span>↗</span>');
+addLanguageTarget('#publications .button-dark', 'All publications <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span>', '全部成果 <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span>');
 addLanguageList('.project-list article > div > p', ['Nature Human Behaviour · Cross-national study', 'Journal of Personality and Social Psychology · Meta-analysis', 'Journal of Experimental Social Psychology · Experiment', 'Journal of Personality and Social Psychology · Meta-analysis']);
 languageTargets.at(-1).values = [['Nature Human Behaviour · Cross-national study', 'Journal of Personality and Social Psychology · Meta-analysis', 'Journal of Experimental Social Psychology · Experiment', 'Journal of Personality and Social Psychology · Meta-analysis'], ['Nature Human Behaviour · 跨国研究', '人格与社会心理学杂志 · 元分析', '实验社会心理学杂志 · 实验研究', '人格与社会心理学杂志 · 元分析']];
 addLanguageList('.project-list article h3', ['Honour, competition and cooperation across 13 societies', 'Institutions and cooperation: A meta-analysis of structural features in social dilemmas', 'Conflict, cooperation, and institutional choice', 'Cross-cultural variation in cooperation: A meta-analysis']);
 languageTargets.at(-1).values = [['Honour, competition and cooperation across 13 societies', 'Institutions and cooperation: A meta-analysis of structural features in social dilemmas', 'Conflict, cooperation, and institutional choice', 'Cross-cultural variation in cooperation: A meta-analysis'], ['荣誉、竞争与合作：13个社会中的跨国研究', '制度与合作：社会困境中结构性特征的元分析', '冲突、合作与制度选择', '合作的跨文化差异：元分析']];
-addLanguageTarget('.featured .project-arrow', '↗', '↗');
+addLanguageTarget('.featured .project-arrow', '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>', '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>');
 
 addLanguageTarget('.people .section-index', '04 / Principal investigator', '04 / 实验室负责人');
 addLanguageTarget('.people .pi-title', 'Principal Investigator · Researcher · Doctoral Supervisor', '实验室负责人 · 研究员 · 博士生导师');
 addLanguageTarget('.people-copy > p:nth-of-type(3)', 'Shuxian Jin studies cooperation, social norms, and cultural differences using behavioral experiments and meta-analysis.', '金淑娴研究员主要通过行为实验与元分析，研究合作行为、社会规范及其文化差异。');
-addLanguageTarget('.profile-open', 'Profile <span>↗</span>', '个人简介 <span>↗</span>');
+addLanguageTarget('.profile-open', 'Profile <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span>', '个人简介 <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span>');
 addLanguageTarget('.journey-head span:first-child', 'ACADEMIC JOURNEY', '学术旅程');
 
 addLanguageTarget('.members .section-index', '05 / Lab members', '05 / 实验室成员');
@@ -276,8 +276,8 @@ addLanguageTarget('.join .section-index', '06 / Join the Lab', '06 / 加入实�
 addLanguageTarget('.join h2', 'Join <em>us</em>', '加入<em>我们</em>');
 addLanguageTarget('.join-content > p:nth-of-type(2)', 'We welcome applications for postdoctoral, doctoral, master’s, and research assistant positions from those interested in decision-making, social psychology, and cross-cultural psychology. Applicants from related fields, including computer science, life sciences, economics, management, sociology, and anthropology, are also welcome.', '实验室欢迎对决策、社会心理学和跨文化心理学感兴趣的博士后、博士生、硕士生及科研助理申请者，也欢迎计算机科学、生命科学、经济学、管理学、社会学、人类学等相关学科的同学加入。');
 addLanguageTarget('.join-note', 'Prospective direct-entry PhD students are advised to contact Dr. Jin before May of the application year.', '计划直接攻读博士的申请者，建议在申请当年5月前联系金老师。');
-addLanguageTarget('.join-actions .button-light', 'Contact Dr. Jin <span>↗</span>', '联系金老师 <span>↗</span>');
-addLanguageTarget('.join-actions .text-link', 'School website <span>→</span>', '学院网站 <span>→</span>');
+addLanguageTarget('.join-actions .button-light', 'Contact Dr. Jin <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span>', '联系金老师 <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span>');
+addLanguageTarget('.join-actions .text-link', 'School website <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>', '学院网站 <span><svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>');
 
 addLanguageTarget('.footer-brand strong', 'COOPERATION &amp; SOCIOCULTURAL LAB', '合作与社会文化实验室');
 addLanguageTarget('.footer-brand p', 'Behavioral Science<br />Cooperation · Norms · Culture', '行为科学<br />合作 · 规范 · 文化');
