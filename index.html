@@ -8,12 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,400&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=team-20261011" />
   </head>
   <body>
     <div class="intro" id="intro" aria-hidden="true">
       <canvas id="intro-canvas"></canvas>
-      <div class="intro-header"><span>COOPERATION &amp; SOCIOCULTURAL LAB</span><span>BEHAVIORAL SYSTEM 001</span></div>
+      <div class="intro-header"><span>COOPERATION &amp; SOCIOCULTURAL LAB</span><span>PEKING UNIVERSITY</span></div>
       <div class="intro-sculpture" aria-hidden="true">
         <i class="sculpture-ring ring-one"></i><i class="sculpture-ring ring-two"></i><i class="sculpture-ring ring-three"></i>
         <span class="choice-node node-one"></span><span class="choice-node node-two"></span><span class="choice-node node-three"></span>
@@ -23,11 +24,11 @@
       <div class="intro-axis axis-x"></div><div class="intro-axis axis-y"></div>
       <div class="intro-story">
         <div class="intro-stage-count"><span id="intro-stage-number">01</span><i></i><span>04</span></div>
-        <p class="intro-kicker">AN EXPERIMENT IN HUMAN COOPERATION</p>
+        <p class="intro-kicker">COOPERATION · NORMS · CULTURE</p>
         <div class="intro-word" id="intro-word">Individual choice.</div>
-        <p class="intro-explainer" id="intro-explainer">One person decides whether to cooperate.</p>
+        <p class="intro-explainer" id="intro-explainer" hidden></p>
       </div>
-      <div class="intro-outcome" aria-hidden="true"><span>COOPERATION</span><em>BECOMES CULTURE</em></div>
+      <div class="intro-outcome" aria-hidden="true"><span>COOPERATION</span><em>NORMS &amp; CULTURE</em></div>
       <div class="intro-notation notation-a">C<sub>i</sub>(t) → C<sub>j</sub>(t+1)</div>
       <div class="intro-notation notation-b">RECIPROCITY / EXPECTATION / NORM</div>
       <div class="intro-sequence">
@@ -46,7 +47,7 @@
         <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#methods">Methods</a>
-        <a href="#people">People</a>
+        <a href="#members">People</a>
         <a href="#publications">Publications</a>
         <a href="#join">Join us</a>
       </nav>
@@ -67,11 +68,11 @@
       <section class="hero" id="about">
         <div class="hero-copy">
           <p class="eyebrow reveal">Behavioral science · Cooperation · Culture</p>
-          <h1 class="reveal">How cooperation<br /><em>becomes culture.</em></h1>
-          <p class="hero-intro reveal">The Cooperation and Sociocultural Lab investigates how cooperative behavior and social norms emerge, vary across cultures, and can be strengthened through evidence-based interventions.</p>
+          <h1 class="reveal">Understanding<br /><em>cooperation.</em></h1>
+          <p class="hero-intro reveal">At Peking University, we study how cooperation and social norms develop, how they differ across cultures, and how interventions can support cooperation.</p>
           <div class="hero-actions reveal">
-            <a class="button button-primary" href="#research">Explore our research <span>↗</span></a>
-            <a class="text-link" href="#people">Meet the lab <span>→</span></a>
+            <a class="button button-primary" href="#research">Our research <span>↗</span></a>
+            <a class="text-link" href="#members">Our team <span>→</span></a>
           </div>
           <div class="methods-strip reveal" aria-label="Our methods">
             <span>Economic games</span><i></i><span>Cross-national experiments</span><i></i><span>Meta-analysis</span>
@@ -86,33 +87,30 @@
           <div class="network-legend"><span><i></i>Individual</span><span><i></i>Within-culture tie</span><span><i></i>Cross-cultural bridge</span></div>
           <div class="visual-caption"><span class="pulse"></span> Conceptual behavioral model</div>
         </div>
-        <div class="scroll-note"><span>Scroll to discover</span><i></i></div>
       </section>
 
       <section class="lab-pulse section-light" id="news">
         <div class="pulse-visual">
           <div class="pulse-heading">
             <div>
-              <p class="section-index">Live research field</p>
-              <h2>Social psychology,<br /><em>in every direction.</em></h2>
+              <p class="section-index">Concepts in social psychology</p>
+              <h2>Cooperation &amp;<br /><em>connections.</em></h2>
             </div>
-            <span>2,000 abstracts · 116 terms</span>
           </div>
           <div class="kakeya-stage" id="kakeya-stage">
             <canvas id="kakeya-canvas" aria-label="Interactive three-dimensional Cube Gate word field of social psychology concepts. Drag to rotate and scroll to zoom."></canvas>
-            <div class="kakeya-status"><i></i><span>CUBE GATE · FINITE DIRECTION MODEL</span></div>
+            <div class="kakeya-status"><i></i><span>CUBE GATE</span></div><div class="kakeya-labels" id="kakeya-labels"></div>
             <div class="kakeya-controls">
               <button id="kakeya-motion" type="button" aria-pressed="true">Pause</button>
               <button id="kakeya-reset" type="button">Reset view</button>
             </div>
             <p class="kakeya-fallback" id="kakeya-fallback">The interactive field could not be loaded. Please refresh the page to try again.</p>
           </div>
-          <p class="kakeya-caption">Each term traces one direction through a shared cube—an interactive view of the concepts connecting our field. Drag to explore; scroll or pinch to zoom.</p>
+          <div class="kakeya-topics" id="kakeya-topics" aria-label="Concept categories"></div>
         </div>
 
         <div class="news-column">
-          <p class="section-index">News &amp; updates</p>
-          <h2>From the <em>lab.</em></h2>
+          <h2>Lab <em>news</em></h2>
           <div class="news-list">
             <a class="news-item" href="https://www.psy.pku.edu.cn/xwzx/xyxw/5d30aab291364b709ab434125a7fb8f3.htm" target="_blank" rel="noreferrer">
               <time datetime="2026-06-30">June 30, 2026</time>
@@ -121,7 +119,7 @@
             </a>
             <a class="news-item" href="https://www.psy.pku.edu.cn/xwzx/xyxw/8d0a068f29c042f7aa8c628eee0fb6f6.htm" target="_blank" rel="noreferrer">
               <time datetime="2026-06-16">June 16, 2026</time>
-              <h3>Shuxian Jin Helps Advance the Chinese Translation and Release of the FORRT Open Scholarship Glossary</h3>
+              <h3>Shuxian Jin Contributes to the Chinese FORRT Open Scholarship Glossary</h3>
               <span>Read story ↗</span>
             </a>
           </div>
@@ -131,7 +129,7 @@
       <section class="research section-light" id="research">
         <div class="section-heading">
           <p class="section-index">01 / What we study</p>
-          <h2>Cooperation, culture,<br /><em>and choice.</em></h2>
+          <h2>Research<br /><em>areas</em></h2>
           <p>We study the formation of cooperation and social norms, cross-cultural differences, and strategies that promote cooperation—using behavioral experiments, surveys, and meta-analysis.</p>
         </div>
         <div class="research-grid">
@@ -153,7 +151,7 @@
             <div>
               <p class="card-kicker">Interaction · Reciprocity</p>
               <h3>Cooperative<br />Behavior</h3>
-              <p>How trust, reciprocity, reputation, and repeated interaction transform individual choices into stable cooperation.</p>
+              <p>We examine how trust, reciprocity, reputation, and repeated interaction affect cooperation, and when cooperation persists or breaks down.</p>
             </div>
           </article>
           <article class="research-card">
@@ -180,7 +178,7 @@
             <div>
               <p class="card-kicker">Culture · Context</p>
               <h3>Cross-Cultural<br />Differences</h3>
-              <p>How ecological, social, and cultural contexts shape cooperation—and which strategies build bridges across boundaries.</p>
+              <p>How cooperation varies across ecological, social, and cultural contexts, and which interventions work in each setting.</p>
             </div>
           </article>
           <article class="research-card">
@@ -205,7 +203,7 @@
       <section class="methods" id="methods">
         <div class="methods-title">
           <p class="section-index">02 / How we work</p>
-          <h2>Multiple methods.<br /><em>One human question.</em></h2>
+          <h2>Research<br /><em>methods</em></h2>
         </div>
         <div class="method-list">
           <article><span>01</span><h3>Economic Game Experiments</h3><p>Controlled tests of trust, fairness, punishment, reciprocity, and collective action.</p><b>↗</b></article>
@@ -217,7 +215,7 @@
 
       <section class="featured section-light" id="publications">
         <div class="featured-head">
-          <div><p class="section-index">03 / Selected work</p><h2>Research<br /><em>in motion</em></h2></div>
+          <div><p class="section-index">03 / Selected work</p><h2>Selected<br /><em>publications</em></h2></div>
           <a class="button button-dark" href="https://www.psy.pku.edu.cn/szdw/qzjy/jsyjy/jsx/index.htm#pubs" target="_blank" rel="noreferrer">All publications <span>↗</span></a>
         </div>
         <div class="project-list">
@@ -233,8 +231,8 @@
           <p class="section-index">04 / Principal investigator</p>
           <h2>Shuxian<br /><em>Jin</em></h2>
           <p class="pi-title">Principal Investigator · Researcher · Doctoral Supervisor</p>
-          <p>Dr. Jin studies cooperation, social norms, and cultural variation through behavioral experiments and global evidence synthesis.</p>
-          <button class="button button-outline profile-open" type="button" aria-haspopup="dialog" aria-controls="profile-dialog">Learn more about Dr. Jin <span>↗</span></button>
+          <p>Shuxian Jin studies cooperation, social norms, and cultural differences using behavioral experiments and meta-analysis.</p>
+          <button class="button button-outline profile-open" type="button" aria-haspopup="dialog" aria-controls="profile-dialog">Profile <span>↗</span></button>
         </div>
         <div class="pi-details">
           <div class="journey-map" aria-label="Academic journey from Beijing to Tianjin, Amsterdam, Sussex, and Peking University">
@@ -254,9 +252,8 @@
               <g class="map-stop stop-4"><circle cx="548" cy="185" r="7"/><text x="548" y="218">SUSSEX</text><text class="map-detail" x="548" y="237">2022–26 · Postdoc</text></g>
               <g class="map-stop stop-5"><circle cx="666" cy="70" r="10" filter="url(#map-glow)"/><circle class="target-ring" cx="666" cy="70" r="23"/><text x="646" y="38">PEKING UNIVERSITY</text><text class="map-detail" x="646" y="19">2026 · PI</text></g>
             </svg>
-            <p>BEIJING → TIANJIN → AMSTERDAM → SUSSEX → BEIJING</p>
+
           </div>
-          <p class="profile-preview">Explore her academic journey and research profile.</p>
         </div>
       </section>
 
@@ -264,32 +261,18 @@
         <div class="members-heading">
           <div>
             <p class="section-index">05 / Lab members</p>
-            <h2>Different paths.<br /><em>Shared questions.</em></h2>
+            <h2>Our <em>team</em></h2>
           </div>
-          <p>Our members bring perspectives from psychology, behavioral science, and international academic communities.</p>
         </div>
-        <div class="member-grid">
-          <article class="member-card">
-            <div class="member-index">01</div><div class="member-initials">WK</div>
-            <div class="member-info"><h3>Wang Kairan <small>王慨然</small></h3><p>Peking University</p><span>Undergraduate · 2023 Cohort</span></div>
-          </article>
-          <article class="member-card">
-            <div class="member-index">02</div><div class="member-initials">LR</div>
-            <div class="member-info"><h3>Liu Ruoting <small>刘若婷</small></h3><p>École Normale Supérieure, Paris</p><span>First-Year PhD Student</span></div>
-          </article>
-          <article class="member-card">
-            <div class="member-index">03</div><div class="member-initials">GH</div>
-            <div class="member-info"><h3>Guan Hengjie <small>关恒杰</small></h3><p>Peking University</p><span>Second-Year Undergraduate</span></div>
-          </article>
-        </div>
+        <div class="member-grid" id="member-grid"></div>
       </section>
 
       <section class="join" id="join">
         <canvas id="join-canvas"></canvas>
         <div class="join-content">
           <p class="section-index">06 / Join the Lab</p>
-          <h2>New questions need<br /><em>new collaborators.</em></h2>
-          <p>We welcome postdoctoral researchers, PhD and master’s students, and research assistants with strong interests in decision-making, social psychology, and cross-cultural psychology. Applicants from computer science, life sciences, economics, management, sociology, anthropology, and other disciplines are especially encouraged.</p>
+          <h2>Join <em>us</em></h2>
+          <p>We welcome applications for postdoctoral, doctoral, master’s, and research assistant positions from those interested in decision-making, social psychology, and cross-cultural psychology. Applicants from related fields, including computer science, life sciences, economics, management, sociology, and anthropology, are also welcome.</p>
           <p class="join-note">Prospective direct-entry PhD students are advised to contact Dr. Jin before May of the application year.</p>
           <div class="join-actions"><a class="button button-light" href="mailto:s.jin@pku.edu.cn">Contact Dr. Jin <span>↗</span></a><a href="https://www.psy.pku.edu.cn/english/index.htm" target="_blank" rel="noreferrer" class="text-link light">School website <span>→</span></a></div>
         </div>
@@ -298,13 +281,13 @@
 
     <footer>
       <div class="footer-brand"><span class="brand-dot"></span><strong>COOPERATION &amp; SOCIOCULTURAL LAB</strong><p>Behavioral Science<br />Cooperation · Norms · Culture</p></div>
-      <div><span>Explore</span><a href="#news">News</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#people">People</a></div>
+      <div><span>Navigation</span><a href="#news">News</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#members">People</a></div>
       <div><span>Connect</span><a href="mailto:s.jin@pku.edu.cn">s.jin@pku.edu.cn</a><a href="https://www.psy.pku.edu.cn/english/index.htm" target="_blank" rel="noreferrer">PKU Psychology</a><a href="https://www.pku.edu.cn/" target="_blank" rel="noreferrer">Peking University</a></div>
       <p class="copyright">© 2026 Cooperation and Sociocultural Lab<br />All rights reserved.</p>
     </footer>
 
     <div class="mobile-menu" aria-hidden="true">
-      <nav><a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#people">People</a><a href="#publications">Publications</a><a href="#join">Join us</a></nav>
+      <nav><a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#members">People</a><a href="#publications">Publications</a><a href="#join">Join us</a></nav>
     </div>
     <dialog class="profile-dialog" id="profile-dialog" aria-labelledby="profile-dialog-title">
       <div class="profile-dialog-inner">
@@ -328,6 +311,12 @@
         </div>
       </div>
     </dialog>
+    <dialog class="member-dialog" id="member-dialog" aria-labelledby="member-dialog-title">
+      <div class="member-dialog-inner">
+        <button class="member-close" type="button" aria-label="Close profile">×</button>
+        <div id="member-detail"></div>
+      </div>
+    </dialog>
     <script type="importmap">
       {
         "imports": {
@@ -336,7 +325,8 @@
         }
       }
     </script>
-    <script src="script.js"></script>
-    <script type="module" src="kakeya.js" onerror="document.querySelector('#kakeya-fallback')?.classList.add('visible')"></script>
+    <script src="script.js?v=team-20261011"></script>
+    <script src="members.js?v=team-20261011"></script>
+    <script type="module" src="kakeya.js?v=team-20261011" onerror="document.querySelector('#kakeya-fallback')?.classList.add('visible')"></script>
   </body>
 </html>
